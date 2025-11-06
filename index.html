@@ -510,10 +510,12 @@
 
         /* BAFARADA (TOOLTIP) MEJORADA PARA STUDENT TESTIMONIALS */
         .tutor-bubble {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            margin-top: 10px;
+          position: relative;
+          display: flex;
+          justify-content: center;   /* centra horizontalmente el botón */
+          align-items: center;       /* opcional: centra verticalmente si hay más altura */
+          width: 100%;               /* ocupa todo el ancho del contenedor padre */
+          margin-top: 15px;          /* separa un poco del texto de arriba */
         }
 
         .tutor-bubble-trigger {
@@ -969,7 +971,7 @@
             box-shadow: var(--shadow);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
             border-radius: var(--border-radius);
             display: flex;
             flex-direction: column;
